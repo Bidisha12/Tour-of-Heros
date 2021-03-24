@@ -1,0 +1,68 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+  color: #435960;
+  font-weight: bold;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+button {
+  margin-top: 20px;
+  margin-right: .5rem;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero_container {
+  display: flex;
+  background-color: grey;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+
+}
+
+.details_container button {
+  align-self: flex-end;
+}
+
+.details_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgb(168, 162, 162);
+  margin: 10px 15px;
+  height: 100vh;
+}
+
+img {
+  height: 100vh;
+  max-width: 100%;
+  padding: 10px;
+}
+.footer{
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
+  margin-top: 60vh;
+}

@@ -1,0 +1,29 @@
+<div class="hero">
+  <div class="hero_container">
+    <div class="img_cnt">
+      <img [src]="hero.img" [alt]="hero.name" />
+    </div>
+  </div>
+
+  <br />
+
+  <div class="details_container">
+    <div *ngIf="hero">
+      <h2>{{ hero.name | uppercase }}</h2>
+
+      <div><span>id: </span>{{ hero.id }}</div>
+      <!-- <div>{{hero.details}}</div> -->
+      <div>
+        <label for="hero-name">Hero name: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name" />
+      </div>
+      <!-- <div class="dtls">{{hero.details}}</div> -->
+      <div class="footer">
+        <button (click)="goBack()">Go back</button>
+        <button (click)="save()">Save</button>
+        <!-- <button (click) ="logout()">Logout</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<br />
